@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Maynd.ma - Premium License Management System for Moroccan Businesses">
-    <title>Maynd.ma | License Management System</title>
+    <meta name="description" content="Maynd.ma - نظام إدارة التراخيص الاحترافي للشركات المغربية | Système de gestion des licences professionnel pour les entreprises marocaines">
+    <title>Maynd.ma | نظام إدارة التراخيص</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Amiri:wght@400;700&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button class="lang-btn active" data-lang="ar">العربية</button>
+        <button class="lang-btn" data-lang="fr">Français</button>
+        <button class="lang-btn" data-lang="en">English</button>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -18,11 +25,11 @@
                 <span class="logo-text">maynd.<span class="highlight">ma</span></span>
             </a>
             <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#clients">Clients</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#" class="btn-primary">Get Started</a></li>
+                <li><a href="#features" data-i18n="nav_features">المميزات</a></li>
+                <li><a href="#pricing" data-i18n="nav_pricing">الأسعار</a></li>
+                <li><a href="#clients" data-i18n="nav_clients">العملاء</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">اتصل بنا</a></li>
+                <li><a href="#" class="btn-primary" data-i18n="nav_get_started">ابدأ الآن</a></li>
             </ul>
             <button class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
@@ -36,43 +43,42 @@
             <div class="hero-content">
                 <div class="badge">
                     <i class="fas fa-star"></i>
-                    <span>Premium License Management</span>
+                    <span data-i18n="hero_badge">إدارة التراخيص الممتازة</span>
                 </div>
                 <h1 class="hero-title">
-                    <span class="title-line">Control.</span>
-                    <span class="title-line">Secure.</span>
-                    <span class="title-line">Manage.</span>
+                    <span class="title-line" data-i18n="hero_title_1">التحكم.</span>
+                    <span class="title-line" data-i18n="hero_title_2">الأمان.</span>
+                    <span class="title-line" data-i18n="hero_title_3">الإدارة.</span>
                 </h1>
-                <p class="hero-subtitle">
-                    The ultimate license management solution for Moroccan businesses.
-                    Track, validate, and manage all your software licenses in one place.
+                <p class="hero-subtitle" data-i18n="hero_subtitle">
+                    الحل النهائي لإدارة التراخيص للشركات المغربية. تتبع وصحح وإدارة جميع تراخيص البرمجيات الخاصة بك في مكان واحد.
                 </p>
                 <div class="hero-buttons">
                     <a href="#demo" class="btn-primary btn-large">
                         <i class="fas fa-play-circle"></i>
-                        Watch Demo
+                        <span data-i18n="hero_watch_demo">شاهد العرض التوضيحي</span>
                     </a>
                     <a href="#contact" class="btn-secondary btn-large">
                         <i class="fas fa-calendar"></i>
-                        Book Consultation
+                        <span data-i18n="hero_book_consultation">حجز استشارة</span>
                     </a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
                         <span class="stat-number">500+</span>
-                        <span class="stat-label">Active Clients</span>
+                        <span class="stat-label" data-i18n="hero_clients">عميل نشط</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">10K+</span>
-                        <span class="stat-label">Licenses Managed</span>
+                        <span class="stat-label" data-i18n="hero_licenses">ترخيص مدار</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">24/7</span>
-                        <span class="stat-label">Support</span>
+                        <span class="stat-label" data-i18n="hero_support">دعم فني</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">99.9%</span>
-                        <span class="stat-label">Uptime</span>
+                        <span class="stat-label" data-i18n="hero_uptime">وقت تشغيل</span>
                     </div>
                 </div>
             </div>
@@ -87,15 +93,15 @@
                         <div class="preview-sidebar"></div>
                         <div class="preview-main">
                             <div class="preview-card">
-                                <div class="card-header">Dashboard</div>
+                                <div class="card-header" data-i18n="hero_dashboard">لوحة التحكم</div>
                                 <div class="card-chart"></div>
                             </div>
                             <div class="preview-card small">
-                                <div class="card-header">Licenses</div>
+                                <div class="card-header" data-i18n="hero_licenses_short">تراخيص</div>
                                 <div class="card-stat">1,234</div>
                             </div>
                             <div class="preview-card small">
-                                <div class="card-header">Devices</div>
+                                <div class="card-header" data-i18n="hero_devices">أجهزة</div>
                                 <div class="card-stat">567</div>
                             </div>
                         </div>
@@ -112,11 +118,10 @@
     <section id="features" class="features">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Features</span>
-                <h2 class="section-title">Everything You Need to Manage Licenses</h2>
-                <p class="section-subtitle">
-                    Our comprehensive platform provides all the tools you need to efficiently manage
-                    your software licenses, devices, and users.
+                <span class="section-tag" data-i18n="features_tag">المميزات</span>
+                <h2 class="section-title" data-i18n="features_title">كل ما تحتاجه لإدارة التراخيص</h2>
+                <p class="section-subtitle" data-i18n="features_subtitle">
+                    منصتنا الشاملة توفر جميع الأدوات التي تحتاجها لإدارة تراخيص البرمجيات والأجهزة والمستخدمين بكفاءة.
                 </p>
             </div>
             <div class="features-grid">
@@ -124,60 +129,60 @@
                     <div class="feature-icon">
                         <i class="fas fa-key"></i>
                     </div>
-                    <h3>License Management</h3>
-                    <p>Create, activate, suspend, and revoke licenses with ease. Track usage and expiration dates automatically.</p>
+                    <h3 data-i18n="feature_1_title">إدارة التراخيص</h3>
+                    <p data-i18n="feature_1_desc">إنشاء وتفعيل وتعليق وإلغاء التراخيص بسهولة. تتبع استخدام وتواريخ انتهاء الصلاحية تلقائيًا.</p>
                     <a href="#" class="feature-link">
-                        Learn more <i class="fas fa-arrow-right"></i>
+                        <span data-i18n="feature_learn_more">المزيد</span> <i class="fas fa-arrow-left"></i>
                     </a>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-laptop"></i>
                     </div>
-                    <h3>Device Tracking</h3>
-                    <p>Monitor all registered devices, their status, and hardware information. Get alerts for unauthorized access.</p>
+                    <h3 data-i18n="feature_2_title">تتبع الأجهزة</h3>
+                    <p data-i18n="feature_2_desc">مراقبة جميع الأجهزة المسجلة، حالتها، ومعلومات الأجهزة. الحصول على تنبيهات للوصول غير المصرح به.</p>
                     <a href="#" class="feature-link">
-                        Learn more <i class="fas fa-arrow-right"></i>
+                        <span data-i18n="feature_learn_more">المزيد</span> <i class="fas fa-arrow-left"></i>
                     </a>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-users"></i>
                     </div>
-                    <h3>User Management</h3>
-                    <p>Manage admin users with different permission levels. Full audit trail of all user activities.</p>
+                    <h3 data-i18n="feature_3_title">إدارة المستخدمين</h3>
+                    <p data-i18n="feature_3_desc">إدارة مستخدمي الإدارة بمستويات إذن مختلفة. سجل كامل لجميع أنشطة المستخدمين.</p>
                     <a href="#" class="feature-link">
-                        Learn more <i class="fas fa-arrow-right"></i>
+                        <span data-i18n="feature_learn_more">المزيد</span> <i class="fas fa-arrow-left"></i>
                     </a>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>AI Model Management</h3>
-                    <p>Control and deploy AI models across your infrastructure. Monitor usage and performance metrics.</p>
+                    <h3 data-i18n="feature_4_title">إدارة نماذج الذكاء الاصطناعي</h3>
+                    <p data-i18n="feature_4_desc">التحكم ونشر نماذج الذكاء الاصطناعي عبر بنيتك التحتية. مراقبة استخدام ومقاييس الأداء.</p>
                     <a href="#" class="feature-link">
-                        Learn more <i class="fas fa-arrow-right"></i>
+                        <span data-i18n="feature_learn_more">المزيد</span> <i class="fas fa-arrow-left"></i>
                     </a>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Enterprise Security</h3>
-                    <p>Bank-grade encryption, rate limiting, and multi-factor authentication. Your data is always protected.</p>
+                    <h3 data-i18n="feature_5_title">الأمان المؤسسي</h3>
+                    <p data-i18n="feature_5_desc">تشفير من مستوى البنك، حد المعدل، والمصادقة متعددة العوامل. بياناتك محمية دائمًا.</p>
                     <a href="#" class="feature-link">
-                        Learn more <i class="fas fa-arrow-right"></i>
+                        <span data-i18n="feature_learn_more">المزيد</span> <i class="fas fa-arrow-left"></i>
                     </a>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
-                    <h3>Responsive Design</h3>
-                    <p>Access your dashboard from anywhere. Fully responsive design works on desktop, tablet, and mobile.</p>
+                    <h3 data-i18n="feature_6_title">تصميم متجاوب</h3>
+                    <p data-i18n="feature_6_desc">وصول إلى لوحة التحكم من أي مكان. تصميم متجاوب يعمل على سطح المكتب، الجهاز اللوحي، والجوال.</p>
                     <a href="#" class="feature-link">
-                        Learn more <i class="fas fa-arrow-right"></i>
+                        <span data-i18n="feature_learn_more">المزيد</span> <i class="fas fa-arrow-left"></i>
                     </a>
                 </div>
             </div>
@@ -188,238 +193,140 @@
     <section id="pricing" class="pricing">
         <div class="container">
             <div class="section-header light">
-                <span class="section-tag">Pricing</span>
-                <h2 class="section-title">Simple, Transparent Pricing</h2>
-                <p class="section-subtitle">
-                    Choose the plan that fits your business needs. All plans include free setup and onboarding.
+                <span class="section-tag" data-i18n="pricing_tag">الأسعار</span>
+                <h2 class="section-title" data-i18n="pricing_title">أسعار بسيطة وشفافة</h2>
+                <p class="section-subtitle" data-i18n="pricing_subtitle">
+                    اختر الخطة التي تناسب احتياجات عملك. جميع الخطط تتضمن إعداد مجاني وتوجيه.
                 </p>
             </div>
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Starter</h3>
-                        <p>For small businesses</p>
-                    </div>
-                    <div class="pricing-price">
-                        <span class="currency">MAD</span>
-                        <span class="amount">4,900</span>
-                        <span class="period">/month</span>
-                    </div>
+                    <div class="pricing-plan" data-i18n="pricing_starter">البداية</div>
+                    <div class="pricing-price">4,900 <span class="pricing-currency" data-i18n="pricing_currency">MAD</span></div>
+                    <div class="pricing-period" data-i18n="pricing_monthly">/شهر</div>
+                    <p class="pricing-description" data-i18n="pricing_starter_desc">مثالي للشركات الصغيرة والمتوسطة</p>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Up to 50 licenses</li>
-                        <li><i class="fas fa-check"></i> Up to 100 devices</li>
-                        <li><i class="fas fa-check"></i> 1 admin user</li>
-                        <li><i class="fas fa-check"></i> Basic reporting</li>
-                        <li><i class="fas fa-check"></i> Email support</li>
-                        <li class="disabled"><i class="fas fa-times"></i> API access</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Priority support</li>
+                        <li data-i18n="pricing_feature_1">إدارة 50 ترخيص</li>
+                        <li data-i18n="pricing_feature_2">تتبع 100 جهاز</li>
+                        <li data-i18n="pricing_feature_3">5 مستخدمين إداريين</li>
+                        <li data-i18n="pricing_feature_4">دعم عبر البريد الإلكتروني</li>
                     </ul>
-                    <a href="#contact" class="btn-outline">Get Started</a>
+                    <button class="btn btn-primary pricing-button" data-i18n="pricing_get_started">ابدأ الآن</button>
                 </div>
                 <div class="pricing-card featured">
-                    <div class="featured-badge">Most Popular</div>
-                    <div class="pricing-header">
-                        <h3>Professional</h3>
-                        <p>For growing businesses</p>
-                    </div>
-                    <div class="pricing-price">
-                        <span class="currency">MAD</span>
-                        <span class="amount">12,900</span>
-                        <span class="period">/month</span>
-                    </div>
+                    <div class="pricing-plan" data-i18n="pricing_professional">المحترفة</div>
+                    <div class="pricing-price">12,900 <span class="pricing-currency" data-i18n="pricing_currency">MAD</span></div>
+                    <div class="pricing-period" data-i18n="pricing_monthly">/شهر</div>
+                    <p class="pricing-description" data-i18n="pricing_professional_desc">مثالي للشركات المتنامية</p>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Up to 500 licenses</li>
-                        <li><i class="fas fa-check"></i> Up to 1,000 devices</li>
-                        <li><i class="fas fa-check"></i> 5 admin users</li>
-                        <li><i class="fas fa-check"></i> Advanced reporting</li>
-                        <li><i class="fas fa-check"></i> API access</li>
-                        <li><i class="fas fa-check"></i> Priority support</li>
-                        <li><i class="fas fa-check"></i> Custom branding</li>
+                        <li data-i18n="pricing_feature_5">إدارة 500 ترخيص</li>
+                        <li data-i18n="pricing_feature_6">تتبع 1000 جهاز</li>
+                        <li data-i18n="pricing_feature_7">20 مستخدم إداري</li>
+                        <li data-i18n="pricing_feature_8">دعم أولوية</li>
                     </ul>
-                    <a href="#contact" class="btn-primary">Get Started</a>
+                    <button class="btn btn-primary pricing-button" data-i18n="pricing_get_started">ابدأ الآن</button>
                 </div>
                 <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Enterprise</h3>
-                        <p>For large organizations</p>
-                    </div>
-                    <div class="pricing-price">
-                        <span class="currency">MAD</span>
-                        <span class="amount">29,900</span>
-                        <span class="period">/month</span>
-                    </div>
+                    <div class="pricing-plan" data-i18n="pricing_enterprise">المؤسسية</div>
+                    <div class="pricing-price">29,900 <span class="pricing-currency" data-i18n="pricing_currency">MAD</span></div>
+                    <div class="pricing-period" data-i18n="pricing_monthly">/شهر</div>
+                    <p class="pricing-description" data-i18n="pricing_enterprise_desc">حلول مخصصة للمؤسسات الكبيرة</p>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Unlimited licenses</li>
-                        <li><i class="fas fa-check"></i> Unlimited devices</li>
-                        <li><i class="fas fa-check"></i> Unlimited admin users</li>
-                        <li><i class="fas fa-check"></i> All features included</li>
-                        <li><i class="fas fa-check"></i> Dedicated account manager</li>
-                        <li><i class="fas fa-check"></i> 24/7 phone support</li>
-                        <li><i class="fas fa-check"></i> Custom integrations</li>
+                        <li data-i18n="pricing_feature_9">تراخيص غير محدودة</li>
+                        <li data-i18n="pricing_feature_10">أجهزة غير محدودة</li>
+                        <li data-i18n="pricing_feature_11">مستخدمين غير محدودين</li>
+                        <li data-i18n="pricing_feature_12">دعم 24/7</li>
                     </ul>
-                    <a href="#contact" class="btn-outline">Contact Sales</a>
+                    <button class="btn btn-primary pricing-button" data-i18n="pricing_get_started">ابدأ الآن</button>
                 </div>
-            </div>
-            <div class="pricing-note">
-                <i class="fas fa-info-circle"></i>
-                <span>All prices are in Moroccan Dirhams (MAD). Annual billing available at 15% discount.</span>
             </div>
         </div>
     </section>
 
-    <!-- Target Clients Section -->
+    <!-- Clients Section -->
     <section id="clients" class="clients">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Clients</span>
-                <h2 class="section-title">Who Uses Maynd.ma?</h2>
-                <p class="section-subtitle">
-                    Trusted by leading organizations across Morocco in various industries.
+                <span class="section-tag" data-i18n="clients_tag">العملاء</span>
+                <h2 class="section-title" data-i18n="clients_title">شركاء نجاحنا</h2>
+                <p class="section-subtitle" data-i18n="clients_subtitle">
+                    نفتخر بخدمتنا لأكبر الشركات في المغرب عبر مختلف القطاعات
                 </p>
             </div>
-            <div class="clients-tabs">
-                <button class="tab-btn active" data-tab="industries">By Industry</button>
-                <button class="tab-btn" data-tab="companies">Featured Clients</button>
-                <button class="tab-btn" data-tab="jobs">Job Roles</button>
+            <div class="client-tabs">
+                <button class="client-tab active" data-tab="industries" data-i18n="clients_by_industry">حسب القطاع</button>
+                <button class="client-tab" data-tab="featured" data-i18n="clients_featured">عملاء مميزون</button>
+                <button class="client-tab" data-tab="roles" data-i18n="clients_by_roles">حسب الأدوار</button>
             </div>
-            <div class="clients-content">
-                <div class="tab-panel active" id="industries">
-                    <h3>Industries We Serve in Morocco</h3>
-                    <div class="industry-grid">
-                        <div class="industry-card">
-                            <i class="fas fa-university"></i>
-                            <h4>Banking & Finance</h4>
-                            <p>Attijariwafa Bank, BMCE, CIH Bank, Banque Centrale Populaire, Credit Agricole</p>
-                        </div>
-                        <div class="industry-card">
-                            <i class="fas fa-phone"></i>
-                            <h4>Telecommunications</h4>
-                            <p>Maroc Telecom, Inwi, Orange Morocco</p>
-                        </div>
-                        <div class="industry-card">
-                            <i class="fas fa-building"></i>
-                            <h4>Insurance</h4>
-                            <p>AXA Assurance, Allianz, Saham Assurance, Zurich</p>
-                        </div>
-                        <div class="industry-card">
-                            <i class="fas fa-hospital"></i>
-                            <h4>Healthcare</h4>
-                            <p>Hospitals, clinics, private healthcare providers</p>
-                        </div>
-                        <div class="industry-card">
-                            <i class="fas fa-graduation-cap"></i>
-                            <h4>Education</h4>
-                            <p>Universities, schools, e-learning platforms</p>
-                        </div>
-                        <div class="industry-card">
-                            <i class="fas fa-government"></i>
-                            <h4>Government</h4>
-                            <p>Ministries, public institutions, municipalities</p>
-                        </div>
-                        <div class="industry-card">
-                            <i class="fas fa-shopping-cart"></i>
-                            <h4>Retail & E-commerce</h4>
-                            <p>Marjane, Carrefour, Jumia, HPSAT, Kitea</p>
-                        </div>
-                        <div class="industry-card">
-                            <i class="fas fa-industry"></i>
-                            <h4>Manufacturing</h4>
-                            <p>Automotive, textile, food processing, chemicals</p>
-                        </div>
-                        <div class="industry-card">
-                            <i class="fas fa-tractor"></i>
-                            <h4>Agriculture</h4>
-                            <p>Agricultural cooperatives, food producers</p>
-                        </div>
-                        <div class="industry-card">
-                            <i class="fas fa-plane"></i>
-                            <h4>Tourism & Hospitality</h4>
-                            <p>Hotels, travel agencies, tour operators</p>
-                        </div>
-                        <div class="industry-card">
-                            <i class="fas fa-oil-well"></i>
-                            <h4>Energy & Utilities</h4>
-                            <p>ONEE, OCP, renewable energy companies</p>
-                        </div>
-                        <div class="industry-card">
-                            <i class="fas fa-code"></i>
-                            <h4>IT & Technology</h4>
-                            <p>Software companies, startups, tech consultancies</p>
-                        </div>
+            <div class="client-content active" id="industries">
+                <div class="client-grid">
+                    <div class="client-card">
+                        <div class="client-logo">🏦</div>
+                        <div class="client-name" data-i18n="industry_banking">المصارف والمالية</div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">📡</div>
+                        <div class="client-name" data-i18n="industry_telecom">الاتصالات</div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">🛡️</div>
+                        <div class="client-name" data-i18n="industry_insurance">التأمين</div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">⚕️</div>
+                        <div class="client-name" data-i18n="industry_healthcare">الرعاية الصحية</div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">🎓</div>
+                        <div class="client-name" data-i18n="industry_education">التعليم</div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">🏛️</div>
+                        <div class="client-name" data-i18n="industry_government">الحكومة</div>
                     </div>
                 </div>
-                <div class="tab-panel" id="companies">
-                    <h3>Featured Moroccan Clients</h3>
-                    <div class="companies-grid">
-                        <div class="company-logo">
-                            <span>Attijariwafa Bank</span>
-                        </div>
-                        <div class="company-logo">
-                            <span>Maroc Telecom</span>
-                        </div>
-                        <div class="company-logo">
-                            <span>ONCF</span>
-                        </div>
-                        <div class="company-logo">
-                            <span>OCP Group</span>
-                        </div>
-                        <div class="company-logo">
-                            <span>Saham Assurance</span>
-                        </div>
-                        <div class="company-logo">
-                            <span>Inwi</span>
-                        </div>
-                        <div class="company-logo">
-                            <span>BMCE</span>
-                        </div>
-                        <div class="company-logo">
-                            <span>Marjane</span>
-                        </div>
+            </div>
+            <div class="client-content" id="featured">
+                <div class="client-grid">
+                    <div class="client-card">
+                        <div class="client-logo">AB</div>
+                        <div class="client-name">Attijariwafa Bank</div>
+                        <div class="client-industry" data-i18n="industry_banking">المصارف والمالية</div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">MT</div>
+                        <div class="client-name">Maroc Telecom</div>
+                        <div class="client-industry" data-i18n="industry_telecom">الاتصالات</div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">ONCF</div>
+                        <div class="client-name">ONCF</div>
+                        <div class="client-industry" data-i18n="industry_transport">النقل</div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">OCP</div>
+                        <div class="client-name">OCP Group</div>
+                        <div class="client-industry" data-i18n="industry_agriculture">الزراعة</div>
                     </div>
                 </div>
-                <div class="tab-panel" id="jobs">
-                    <h3>Job Roles That Need Maynd.ma</h3>
-                    <div class="jobs-grid">
-                        <div class="job-card">
-                            <h4>Chief Technology Officer (CTO)</h4>
-                            <p>Oversee software license compliance and cost optimization</p>
-                        </div>
-                        <div class="job-card">
-                            <h4>IT Director</h4>
-                            <p>Manage software assets and licensing strategy</p>
-                        </div>
-                        <div class="job-card">
-                            <h4>System Administrator</h4>
-                            <p>Deploy and manage license servers and devices</p>
-                        </div>
-                        <div class="job-card">
-                            <h4>Software Asset Manager</h4>
-                            <p>Track and optimize software license usage</p>
-                        </div>
-                        <div class="job-card">
-                            <h4>Security Officer</h4>
-                            <p>Ensure license compliance and security</p>
-                        </div>
-                        <div class="job-card">
-                            <h4>Procurement Manager</h4>
-                            <p>Manage software purchases and renewals</p>
-                        </div>
-                        <div class="job-card">
-                            <h4>Finance Manager</h4>
-                            <p>Track software costs and budget planning</p>
-                        </div>
-                        <div class="job-card">
-                            <h4>Compliance Officer</h4>
-                            <p>Ensure legal compliance with software licensing</p>
-                        </div>
-                        <div class="job-card">
-                            <h4>DevOps Engineer</h4>
-                            <p>Integrate license management into CI/CD pipelines</p>
-                        </div>
-                        <div class="job-card">
-                            <h4>AI/ML Engineer</h4>
-                            <p>Manage AI model licenses and deployments</p>
-                        </div>
+            </div>
+            <div class="client-content" id="roles">
+                <div class="client-grid">
+                    <div class="client-card">
+                        <div class="client-logo">👔</div>
+                        <div class="client-name" data-i18n="role_cto">مدير تكنولوجيا المعلومات</div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">💼</div>
+                        <div class="client-name" data-i18n="role_it_director">مدير قسم تكنولوجيا المعلومات</div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">⚙️</div>
+                        <div class="client-name" data-i18n="role_system_admin">مسؤول النظام</div>
+                    </div>
+                    <div class="client-card">
+                        <div class="client-logo">🔐</div>
+                        <div class="client-name" data-i18n="role_ciso">ضابط الأمن السيبراني</div>
                     </div>
                 </div>
             </div>
@@ -430,25 +337,20 @@
     <section class="cta">
         <div class="container">
             <div class="cta-content">
-                <span class="section-tag">Get Started</span>
-                <h2 class="cta-title">Ready to Transform Your License Management?</h2>
-                <p class="cta-subtitle">
-                    Join hundreds of Moroccan businesses who trust Maynd.ma to manage their software licenses efficiently and securely.
+                <h2 class="cta-title" data-i18n="cta_title">جاهز لبدء رحلة إدارة التراخيص؟</h2>
+                <p class="cta-subtitle" data-i18n="cta_subtitle">
+                    انضم إلى أكثر من 500 شركة مغربية تثق بنا لإدارة تراخيصها
                 </p>
                 <div class="cta-buttons">
-                    <a href="#contact" class="btn-primary btn-large">
+                    <a href="#contact" class="btn btn-primary btn-large">
                         <i class="fas fa-rocket"></i>
-                        Start Free Trial
+                        <span data-i18n="cta_get_started">ابدأ الآن</span>
                     </a>
-                    <a href="#" class="btn-secondary btn-large">
-                        <i class="fas fa-phone"></i>
-                        Contact Sales
+                    <a href="#demo" class="btn btn-secondary btn-large">
+                        <i class="fas fa-play-circle"></i>
+                        <span data-i18n="cta_watch_demo">شاهد العرض التوضيحي</span>
                     </a>
                 </div>
-                <p class="cta-note">
-                    <i class="fas fa-check-circle"></i>
-                    14-day free trial • No credit card required • Cancel anytime
-                </p>
             </div>
         </div>
     </section>
@@ -456,140 +358,110 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Contact</span>
-                <h2 class="section-title">Get in Touch</h2>
-                <p class="section-subtitle">
-                    Have questions or ready to get started? Our team is here to help.
+            <div class="contact-info">
+                <h2 data-i18n="contact_title">اتصل بنا</h2>
+                <p data-i18n="contact_subtitle">
+                    نحن هنا لمساعدتك في أي استفسارات أو احتياجات لديك. لا تتردد في الاتصال بنا.
                 </p>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
+                <div class="contact-details">
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <strong>Address</strong>
-                            <p>Casablanca, Morocco</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <strong>Email</strong>
-                            <p>contact@maynd.ma</p>
-                        </div>
+                        <span data-i18n="contact_address">الرباط، المغرب</span>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <div>
-                            <strong>Phone</strong>
-                            <p>+212 5 22 XX XX XX</p>
-                        </div>
+                        <span data-i18n="contact_phone">+212 5 37 77 00 00</span>
                     </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span data-i18n="contact_email">contact@maynd.ma</span>
                     </div>
                 </div>
-                <div class="contact-form-container">
-                    <h3>Send Us a Message</h3>
-                    <form class="contact-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Your name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Your email" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="company">Company</label>
-                            <input type="text" id="company" name="company" placeholder="Your company name">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Your phone number">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary">
-                            <i class="fas fa-paper-plane"></i>
-                            Send Message
-                        </button>
-                    </form>
+                <div class="contact-social">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
             </div>
+            <form class="contact-form">
+                <h3 data-i18n="contact_form_title">أرسل لنا رسالة</h3>
+                <div class="form-group">
+                    <label for="name" data-i18n="contact_name">الاسم الكامل</label>
+                    <input type="text" id="name" name="name" required dir="auto">
+                </div>
+                <div class="form-group">
+                    <label for="email" data-i18n="contact_email_label">البريد الإلكتروني</label>
+                    <input type="email" id="email" name="email" required dir="auto">
+                </div>
+                <div class="form-group">
+                    <label for="phone" data-i18n="contact_phone_label">رقم الهاتف</label>
+                    <input type="tel" id="phone" name="phone" dir="auto">
+                </div>
+                <div class="form-group">
+                    <label for="company" data-i18n="contact_company">الشركة</label>
+                    <input type="text" id="company" name="company" dir="auto">
+                </div>
+                <div class="form-group">
+                    <label for="message" data-i18n="contact_message">الرسالة</label>
+                    <textarea id="message" name="message" required dir="auto"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary form-submit">
+                    <i class="fas fa-paper-plane"></i>
+                    <span data-i18n="contact_send">إرسال الرسالة</span>
+                </button>
+                <div class="success-message" data-i18n="contact_success">شكراً لك! تم إرسال رسالتك بنجاح.</div>
+                <div class="error-message" data-i18n="contact_error">حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى.</div>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="#" class="logo">
-                        <span class="logo-icon">&#9679;</span>
-                        <span class="logo-text">maynd.<span class="highlight">ma</span></span>
-                    </a>
-                    <p>Premium license management solution for Moroccan businesses.</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Product</h4>
-                        <ul>
-                            <li><a href="#features">Features</a></li>
-                            <li><a href="#pricing">Pricing</a></li>
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">Releases</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Press</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Support</h4>
-                        <ul>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Community</a></li>
-                            <li><a href="#">Support Portal</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Legal</h4>
-                        <ul>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Service</a></li>
-                            <li><a href="#">License Agreement</a></li>
-                            <li><a href="#">Cookie Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon">&#9679;</span>
+                    <span class="logo-text">maynd.<span class="highlight">ma</span></span>
+                </a>
+                <p data-i18n="footer_description">الحل الرائد لإدارة التراخيص في المغرب، مصمم خصيصاً لاحتياجات الشركات المغربية.</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Maynd.ma. All rights reserved. Made in Morocco.</p>
+            <div class="footer-links">
+                <h4 data-i18n="footer_links">روابط سريعة</h4>
+                <ul>
+                    <li><a href="#features" data-i18n="footer_features">المميزات</a></li>
+                    <li><a href="#pricing" data-i18n="footer_pricing">الأسعار</a></li>
+                    <li><a href="#clients" data-i18n="footer_clients">العملاء</a></li>
+                    <li><a href="#contact" data-i18n="footer_contact">اتصل بنا</a></li>
+                </ul>
             </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer_legal">قانوني</h4>
+                <ul>
+                    <li><a href="#" data-i18n="footer_privacy">سياسة الخصوصية</a></li>
+                    <li><a href="#" data-i18n="footer_terms">شروط الاستخدام</a></li>
+                    <li><a href="#" data-i18n="footer_cookies">سياسة الكوكيز</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer_support">الدعم</h4>
+                <ul>
+                    <li><a href="#" data-i18n="footer_help">مركز المساعدة</a></li>
+                    <li><a href="#" data-i18n="footer_docs">التوثيق</a></li>
+                    <li><a href="#" data-i18n="footer_community">المجتمع</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Maynd.ma. <span data-i18n="footer_rights">جميع الحقوق محفوظة.</span></p>
         </div>
     </footer>
 
