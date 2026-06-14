@@ -1,12 +1,12 @@
 /* ========================================
-   LocalMind.ma - Landing Page Styles
+   Maynd.ma - Landing Page Styles
    Dark theme with teal accent (#00D4AA)
    Based on briefing design tokens
    ======================================== */
 
 /* ===== CSS Custom Properties ===== */
 :root {
-    /* Colors - LocalMind.ma Dark Theme */
+    /* Colors - Maynd.ma Dark Theme */
     --bg: #0B0D10;
     --surface: #111418;
     --raised: #181C22;
@@ -559,7 +559,7 @@ body[lang="ar"] .language-selector {
 }
 
 .usb-body::before {
-    content: 'LocalMind.ma';
+    content: 'Maynd.ma';
     position: absolute;
     top: 50%;
     left: 50%;
