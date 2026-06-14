@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Maynd.ma - نظام إدارة التراخيص الاحترافي للشركات المغربية | Système de gestion des licences professionnel pour les entreprises marocaines">
-    <title>Maynd.ma | نظام إدارة التراخيص</title>
+    <meta name="description" content="LocalMind.ma - الذكاء الاصطناعي المحلي 100% بدون انترنت للمحترفين المغاربة">
+    <title>LocalMind.ma | الذكاء الاصطناعي المحلي</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Amiri:wght@400;700&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -21,19 +21,18 @@
     <nav class="navbar">
         <div class="container">
             <a href="#" class="logo">
-                <span class="logo-icon">&#9679;</span>
-                <span class="logo-text">maynd.<span class="highlight">ma</span></span>
+                <span class="logo-icon">🧠</span>
+                <span class="logo-text">localmind.<span class="highlight">ma</span></span>
             </a>
             <ul class="nav-links">
                 <li><a href="#features" data-i18n="nav_features">المميزات</a></li>
+                <li><a href="#solutions" data-i18n="nav_solutions">الحلول</a></li>
                 <li><a href="#pricing" data-i18n="nav_pricing">الأسعار</a></li>
-                <li><a href="#clients" data-i18n="nav_clients">العملاء</a></li>
+                <li><a href="#how-it-works" data-i18n="nav_how_it_works">كيف يعمل</a></li>
                 <li><a href="#contact" data-i18n="nav_contact">اتصل بنا</a></li>
-                <li><a href="#" class="btn-primary" data-i18n="nav_get_started">ابدأ الآن</a></li>
+                <li><a href="#order" class="btn-primary" data-i18n="nav_order">اطلب الآن</a></li>
             </ul>
-            <button class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
         </div>
     </nav>
 
@@ -41,76 +40,75 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="badge">
-                    <i class="fas fa-star"></i>
-                    <span data-i18n="hero_badge">إدارة التراخيص الممتازة</span>
+                <div class="hero-badges">
+                    <span class="badge"><i class="fas fa-shield-alt"></i> <span data-i18n="hero_badge_1">خصوصية 100%</span></span>
+                    <span class="badge"><i class="fas fa-wifi-slash"></i> <span data-i18n="hero_badge_2">بدون انترنت</span></span>
+                    <span class="badge"><i class="fas fa-flag"></i> <span data-i18n="hero_badge_3">مصنوع بالمغرب</span></span>
                 </div>
                 <h1 class="hero-title">
-                    <span class="title-line" data-i18n="hero_title_1">التحكم.</span>
-                    <span class="title-line" data-i18n="hero_title_2">الأمان.</span>
-                    <span class="title-line" data-i18n="hero_title_3">الإدارة.</span>
+                    <span class="title-line" data-i18n="hero_title_1">الذكاء الاصطناعي</span>
+                    <span class="title-line highlight" data-i18n="hero_title_2">المحلي للمحترفين</span>
                 </h1>
                 <p class="hero-subtitle" data-i18n="hero_subtitle">
-                    الحل النهائي لإدارة التراخيص للشركات المغربية. تتبع وصحح وإدارة جميع تراخيص البرمجيات الخاصة بك في مكان واحد.
+                    حل ذكاء اصطناعي كامل يعمل بدون انترنت على جهازك المحلي. لا سحابة. لا رسوم شهرية. لا تسريب للبيانات.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#demo" class="btn-primary btn-large">
-                        <i class="fas fa-play-circle"></i>
-                        <span data-i18n="hero_watch_demo">شاهد العرض التوضيحي</span>
+                    <a href="#order" class="btn btn-primary btn-large">
+                        <i class="fas fa-usb"></i> <span data-i18n="hero_order_usb">اطلب فلاش USB</span>
                     </a>
-                    <a href="#contact" class="btn-secondary btn-large">
-                        <i class="fas fa-calendar"></i>
-                        <span data-i18n="hero_book_consultation">حجز استشارة</span>
+                    <a href="#demo" class="btn btn-secondary btn-large">
+                        <i class="fas fa-play-circle"></i> <span data-i18n="hero_watch_demo">شاهد العرض</span>
                     </a>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label" data-i18n="hero_clients">عميل نشط</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">10K+</span>
-                        <span class="stat-label" data-i18n="hero_licenses">ترخيص مدار</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">24/7</span>
-                        <span class="stat-label" data-i18n="hero_support">دعم فني</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">99.9%</span>
-                        <span class="stat-label" data-i18n="hero_uptime">وقت تشغيل</span>
-                    </div>
+                <div class="hero-trust">
+                    <span data-i18n="hero_trusted_by">موثوق من قبل</span>
+                    <span class="trust-number">500+</span>
+                    <span data-i18n="hero_companies">شركة مغربية</span>
                 </div>
             </div>
             <div class="hero-image">
-                <div class="dashboard-preview">
-                    <div class="preview-header">
-                        <div class="preview-dot red"></div>
-                        <div class="preview-dot yellow"></div>
-                        <div class="preview-dot green"></div>
-                    </div>
-                    <div class="preview-content">
-                        <div class="preview-sidebar"></div>
-                        <div class="preview-main">
-                            <div class="preview-card">
-                                <div class="card-header" data-i18n="hero_dashboard">لوحة التحكم</div>
-                                <div class="card-chart"></div>
-                            </div>
-                            <div class="preview-card small">
-                                <div class="card-header" data-i18n="hero_licenses_short">تراخيص</div>
-                                <div class="card-stat">1,234</div>
-                            </div>
-                            <div class="preview-card small">
-                                <div class="card-header" data-i18n="hero_devices">أجهزة</div>
-                                <div class="card-stat">567</div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="usb-mockup">
+                    <div class="usb-body"></div>
+                    <div class="usb-connector"></div>
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
+        <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-icon"><i class="fas fa-wifi-slash"></i></div>
+                    <div class="trust-text">
+                        <strong data-i18n="trust_100_offline">100% بدون انترنت</strong>
+                        <span data-i18n="trust_100_offline_desc">يعمل تماماً بدون اتصال</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon"><i class="fas fa-coins"></i></div>
+                    <div class="trust-text">
+                        <strong data-i18n="trust_0_mad">0 MAD</strong>
+                        <span data-i18n="trust_0_mad_desc">لا رسوم شهرية</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon"><i class="fas fa-bolt"></i></div>
+                    <div class="trust-text">
+                        <strong data-i18n="trust_2_sec">2 ثواني</strong>
+                        <span data-i18n="trust_2_sec_desc">استجابة فورية</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon"><i class="fas fa-lock"></i></div>
+                    <div class="trust-text">
+                        <strong data-i18n="trust_encrypted">مشفّر</strong>
+                        <span data-i18n="trust_encrypted_desc">بياناتك آمنة</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -119,307 +117,363 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag" data-i18n="features_tag">المميزات</span>
-                <h2 class="section-title" data-i18n="features_title">كل ما تحتاجه لإدارة التراخيص</h2>
+                <h2 class="section-title" data-i18n="features_title">لماذا تختار LocalMind؟</h2>
                 <p class="section-subtitle" data-i18n="features_subtitle">
-                    منصتنا الشاملة توفر جميع الأدوات التي تحتاجها لإدارة تراخيص البرمجيات والأجهزة والمستخدمين بكفاءة.
+                    الحل الوحيد في المغرب الذي يوفر ذكاء اصطناعي كامل بدون انترنت
                 </p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-key"></i>
-                    </div>
-                    <h3 data-i18n="feature_1_title">إدارة التراخيص</h3>
-                    <p data-i18n="feature_1_desc">إنشاء وتفعيل وتعليق وإلغاء التراخيص بسهولة. تتبع استخدام وتواريخ انتهاء الصلاحية تلقائيًا.</p>
-                    <a href="#" class="feature-link">
-                        <span data-i18n="feature_learn_more">المزيد</span> <i class="fas fa-arrow-left"></i>
-                    </a>
+                    <div class="feature-icon"><i class="fas fa-plug"></i></div>
+                    <h3 data-i18n="feature_1_title">تثبيت فوري</h3>
+                    <p data-i18n="feature_1_desc">قم بتثبيت التطبيق من فلاش USB في دقائق بدون إعداد معقد</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-laptop"></i>
-                    </div>
-                    <h3 data-i18n="feature_2_title">تتبع الأجهزة</h3>
-                    <p data-i18n="feature_2_desc">مراقبة جميع الأجهزة المسجلة، حالتها، ومعلومات الأجهزة. الحصول على تنبيهات للوصول غير المصرح به.</p>
-                    <a href="#" class="feature-link">
-                        <span data-i18n="feature_learn_more">المزيد</span> <i class="fas fa-arrow-left"></i>
-                    </a>
+                    <div class="feature-icon"><i class="fas fa-file-pdf"></i></div>
+                    <h3 data-i18n="feature_2_title">معالجة الوثائق</h3>
+                    <p data-i18n="feature_2_desc">استخراج النصوص من PDFs، الصور، وجداول Excel</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3 data-i18n="feature_3_title">إدارة المستخدمين</h3>
-                    <p data-i18n="feature_3_desc">إدارة مستخدمي الإدارة بمستويات إذن مختلفة. سجل كامل لجميع أنشطة المستخدمين.</p>
-                    <a href="#" class="feature-link">
-                        <span data-i18n="feature_learn_more">المزيد</span> <i class="fas fa-arrow-left"></i>
-                    </a>
+                    <div class="feature-icon"><i class="fas fa-comments"></i></div>
+                    <h3 data-i18n="feature_3_title">محادثة ذكية</h3>
+                    <p data-i18n="feature_3_desc">اسأل عن وثائقك واحصل على إجابات دقيقة</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3 data-i18n="feature_4_title">إدارة نماذج الذكاء الاصطناعي</h3>
-                    <p data-i18n="feature_4_desc">التحكم ونشر نماذج الذكاء الاصطناعي عبر بنيتك التحتية. مراقبة استخدام ومقاييس الأداء.</p>
-                    <a href="#" class="feature-link">
-                        <span data-i18n="feature_learn_more">المزيد</span> <i class="fas fa-arrow-left"></i>
-                    </a>
+                    <div class="feature-icon"><i class="fas fa-search"></i></div>
+                    <h3 data-i18n="feature_4_title">بحث متقدم</h3>
+                    <p data-i18n="feature_4_desc">ابحث في آلاف الوثائق بدقة عالية</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3 data-i18n="feature_5_title">الأمان المؤسسي</h3>
-                    <p data-i18n="feature_5_desc">تشفير من مستوى البنك، حد المعدل، والمصادقة متعددة العوامل. بياناتك محمية دائمًا.</p>
-                    <a href="#" class="feature-link">
-                        <span data-i18n="feature_learn_more">المزيد</span> <i class="fas fa-arrow-left"></i>
-                    </a>
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 data-i18n="feature_5_title">حماية تامة</h3>
+                    <p data-i18n="feature_5_desc">لا يتم إرسال أي بيانات إلى السحابة</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3 data-i18n="feature_6_title">تصميم متجاوب</h3>
-                    <p data-i18n="feature_6_desc">وصول إلى لوحة التحكم من أي مكان. تصميم متجاوب يعمل على سطح المكتب، الجهاز اللوحي، والجوال.</p>
-                    <a href="#" class="feature-link">
-                        <span data-i18n="feature_learn_more">المزيد</span> <i class="fas fa-arrow-left"></i>
-                    </a>
+                    <div class="feature-icon"><i class="fas fa-flag"></i></div>
+                    <h3 data-i18n="feature_6_title">مخصص للمغرب</h3>
+                    <p data-i18n="feature_6_desc">يدعم الدارجة والعربية الفصحى</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing">
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="solutions_tag">الحلول</span>
+                <h2 class="section-title" data-i18n="solutions_title">قطاعات مستهدفة</h2>
+                <p class="section-subtitle" data-i18n="solutions_subtitle">
+                    حلول مخصصة لكل قطاع من قطاعات السوق المغربية
+                </p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card featured">
+                    <div class="solution-badge" data-i18n="solution_primary">رئيسي</div>
+                    <div class="solution-icon"><i class="fas fa-calculator"></i></div>
+                    <h3 data-i18n="solution_fiduciaires">المكاتب المحاسبية</h3>
+                    <p data-i18n="solution_fiduciaires_desc">
+                        استخراج الفواتير، تحليل البيانات المالية، توليد التقارير الضريبية
+                    </p>
+                    <ul class="solution-features">
+                        <li data-i18n="solution_feature_1">استخراج الفواتير من PDF</li>
+                        <li data-i18n="solution_feature_2">تحليل بيانات TVA/IS/IR</li>
+                        <li data-i18n="solution_feature_3">توليد التقارير التلقائي</li>
+                    </ul>
+                    <a href="#order" class="btn btn-primary" data-i18n="solution_order">اطلب الآن</a>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-badge" data-i18n="solution_secondary">ثانوي</div>
+                    <div class="solution-icon"><i class="fas fa-plus-square"></i></div>
+                    <h3 data-i18n="solution_medical">العيادات الطبية</h3>
+                    <p data-i18n="solution_medical_desc">
+                        تلخيص سجلات المرضى، تحليل الاستمارات الطبية
+                    </p>
+                    <ul class="solution-features">
+                        <li data-i18n="solution_feature_4">تلخيص سجلات المرضى</li>
+                        <li data-i18n="solution_feature_5">تعرف على الأدوية</li>
+                        <li data-i18n="solution_feature_6">OCR للاستمارات</li>
+                    </ul>
+                    <a href="#order" class="btn btn-secondary" data-i18n="solution_learn_more">المزيد</a>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-badge" data-i18n="solution_secondary">ثانوي</div>
+                    <div class="solution-icon"><i class="fas fa-balance-scale"></i></div>
+                    <h3 data-i18n="solution_legal">المكاتب القانونية</h3>
+                    <p data-i18n="solution_legal_desc">
+                        تحليل بنود العقود، الإجابة عن أسئلة قانونية
+                    </p>
+                    <ul class="solution-features">
+                        <li data-i18n="solution_feature_7">تحليل العقود</li>
+                        <li data-i18n="solution_feature_8">الإجابة القانونية</li>
+                        <li data-i18n="solution_feature_9">تلخيص الوثائق</li>
+                    </ul>
+                    <a href="#order" class="btn btn-secondary" data-i18n="solution_learn_more">المزيد</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
         <div class="container">
             <div class="section-header light">
+                <span class="section-tag" data-i18n="how_it_works_tag">كيف يعمل</span>
+                <h2 class="section-title" data-i18n="how_it_works_title">عملية بسيطة</h2>
+                <p class="section-subtitle" data-i18n="how_it_works_subtitle">
+                    من الطلب إلى الاستخدام في 3 خطوات
+                </p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h3 data-i18n="step_1_title">اطلب فلاش USB</h3>
+                    <p data-i18n="step_1_desc">اختر الحزمة المناسبة</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon"><i class="fas fa-key"></i></div>
+                    <h3 data-i18n="step_2_title">تفعيل الترخيص</h3>
+                    <p data-i18n="step_2_desc">تثبيت مرة واحدة</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon"><i class="fas fa-rocket"></i></div>
+                    <h3 data-i18n="step_3_title">ابدأ الاستخدام</h3>
+                    <p data-i18n="step_3_desc">استخدم بدون قيود</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
                 <span class="section-tag" data-i18n="pricing_tag">الأسعار</span>
-                <h2 class="section-title" data-i18n="pricing_title">أسعار بسيطة وشفافة</h2>
+                <h2 class="section-title" data-i18n="pricing_title">أسعار شفافة</h2>
                 <p class="section-subtitle" data-i18n="pricing_subtitle">
-                    اختر الخطة التي تناسب احتياجات عملك. جميع الخطط تتضمن إعداد مجاني وتوجيه.
+                    دفع مرة واحدة. لا رسوم شهرية.
                 </p>
             </div>
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <div class="pricing-plan" data-i18n="pricing_starter">البداية</div>
-                    <div class="pricing-price">4,900 <span class="pricing-currency" data-i18n="pricing_currency">MAD</span></div>
-                    <div class="pricing-period" data-i18n="pricing_monthly">/شهر</div>
-                    <p class="pricing-description" data-i18n="pricing_starter_desc">مثالي للشركات الصغيرة والمتوسطة</p>
+                    <div class="pricing-badge" data-i18n="pricing_for">للمحترفين</div>
+                    <div class="pricing-plan" data-i18n="pricing_professional">المحترف</div>
+                    <div class="pricing-price">8,900 <span class="pricing-currency">MAD</span></div>
+                    <div class="pricing-period" data-i18n="pricing_one_time">دفع مرة واحدة</div>
+                    <p class="pricing-description" data-i18n="pricing_professional_desc">مثالي للمكاتب الصغيرة</p>
                     <ul class="pricing-features">
-                        <li data-i18n="pricing_feature_1">إدارة 50 ترخيص</li>
-                        <li data-i18n="pricing_feature_2">تتبع 100 جهاز</li>
-                        <li data-i18n="pricing_feature_3">5 مستخدمين إداريين</li>
-                        <li data-i18n="pricing_feature_4">دعم عبر البريد الإلكتروني</li>
+                        <li data-i18n="pricing_feature_1">نموذج 7B</li>
+                        <li data-i18n="pricing_feature_2">50 وثيقة/يوم</li>
+                        <li data-i18n="pricing_feature_3">دعم PDF</li>
+                        <li data-i18n="pricing_feature_4">تحديثات سنة</li>
                     </ul>
-                    <button class="btn btn-primary pricing-button" data-i18n="pricing_get_started">ابدأ الآن</button>
+                    <button class="btn btn-primary" data-i18n="pricing_order">اطلب الآن</button>
                 </div>
                 <div class="pricing-card featured">
-                    <div class="pricing-plan" data-i18n="pricing_professional">المحترفة</div>
-                    <div class="pricing-price">12,900 <span class="pricing-currency" data-i18n="pricing_currency">MAD</span></div>
-                    <div class="pricing-period" data-i18n="pricing_monthly">/شهر</div>
-                    <p class="pricing-description" data-i18n="pricing_professional_desc">مثالي للشركات المتنامية</p>
+                    <div class="pricing-badge" data-i18n="pricing_popular">الأكثر مبيعاً</div>
+                    <div class="pricing-plan" data-i18n="pricing_business">الأعمال</div>
+                    <div class="pricing-price">19,900 <span class="pricing-currency">MAD</span></div>
+                    <div class="pricing-period" data-i18n="pricing_one_time">دفع مرة واحدة</div>
+                    <p class="pricing-description" data-i18n="pricing_business_desc">مثالي للمكاتب الكبيرة</p>
                     <ul class="pricing-features">
-                        <li data-i18n="pricing_feature_5">إدارة 500 ترخيص</li>
-                        <li data-i18n="pricing_feature_6">تتبع 1000 جهاز</li>
-                        <li data-i18n="pricing_feature_7">20 مستخدم إداري</li>
-                        <li data-i18n="pricing_feature_8">دعم أولوية</li>
+                        <li data-i18n="pricing_feature_5">نموذج 14B</li>
+                        <li data-i18n="pricing_feature_6">معالجة غير محدودة</li>
+                        <li data-i18n="pricing_feature_7">دعم جميع الملفات</li>
+                        <li data-i18n="pricing_feature_8">تحديثات مدى الحياة</li>
                     </ul>
-                    <button class="btn btn-primary pricing-button" data-i18n="pricing_get_started">ابدأ الآن</button>
+                    <button class="btn btn-primary" data-i18n="pricing_order">اطلب الآن</button>
                 </div>
                 <div class="pricing-card">
-                    <div class="pricing-plan" data-i18n="pricing_enterprise">المؤسسية</div>
-                    <div class="pricing-price">29,900 <span class="pricing-currency" data-i18n="pricing_currency">MAD</span></div>
-                    <div class="pricing-period" data-i18n="pricing_monthly">/شهر</div>
-                    <p class="pricing-description" data-i18n="pricing_enterprise_desc">حلول مخصصة للمؤسسات الكبيرة</p>
+                    <div class="pricing-badge" data-i18n="pricing_enterprise">المؤسسات</div>
+                    <div class="pricing-plan" data-i18n="pricing_enterprise">المؤسسي</div>
+                    <div class="pricing-price">39,900 <span class="pricing-currency">MAD</span></div>
+                    <div class="pricing-period" data-i18n="pricing_one_time">دفع مرة واحدة</div>
+                    <p class="pricing-description" data-i18n="pricing_enterprise_desc">حلول مخصصة</p>
                     <ul class="pricing-features">
-                        <li data-i18n="pricing_feature_9">تراخيص غير محدودة</li>
-                        <li data-i18n="pricing_feature_10">أجهزة غير محدودة</li>
-                        <li data-i18n="pricing_feature_11">مستخدمين غير محدودين</li>
-                        <li data-i18n="pricing_feature_12">دعم 24/7</li>
+                        <li data-i18n="pricing_feature_9">نموذج 32B</li>
+                        <li data-i18n="pricing_feature_10">تثبيت على خادم</li>
+                        <li data-i18n="pricing_feature_11">دعم 24/7</li>
+                        <li data-i18n="pricing_feature_12">تدريب مخصص</li>
                     </ul>
-                    <button class="btn btn-primary pricing-button" data-i18n="pricing_get_started">ابدأ الآن</button>
+                    <button class="btn btn-primary" data-i18n="pricing_contact">اتصل بنا</button>
                 </div>
             </div>
+            <p class="pricing-note" data-i18n="pricing_note">⚡ جميع الحزم تشمل فلاش USB + تطبيق + نموذج الذكاء الاصطناعي + سنة دعم</p>
         </div>
     </section>
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients">
+    <!-- USB Features -->
+    <section class="usb-features">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag" data-i18n="clients_tag">العملاء</span>
-                <h2 class="section-title" data-i18n="clients_title">شركاء نجاحنا</h2>
-                <p class="section-subtitle" data-i18n="clients_subtitle">
-                    نفتخر بخدمتنا لأكبر الشركات في المغرب عبر مختلف القطاعات
-                </p>
+                <span class="section-tag" data-i18n="usb_tag">فلاش USB</span>
+                <h2 class="section-title" data-i18n="usb_title">ما الذي تحصل عليه</h2>
             </div>
-            <div class="client-tabs">
-                <button class="client-tab active" data-tab="industries" data-i18n="clients_by_industry">حسب القطاع</button>
-                <button class="client-tab" data-tab="featured" data-i18n="clients_featured">عملاء مميزون</button>
-                <button class="client-tab" data-tab="roles" data-i18n="clients_by_roles">حسب الأدوار</button>
-            </div>
-            <div class="client-content active" id="industries">
-                <div class="client-grid">
-                    <div class="client-card">
-                        <div class="client-logo">🏦</div>
-                        <div class="client-name" data-i18n="industry_banking">المصارف والمالية</div>
-                    </div>
-                    <div class="client-card">
-                        <div class="client-logo">📡</div>
-                        <div class="client-name" data-i18n="industry_telecom">الاتصالات</div>
-                    </div>
-                    <div class="client-card">
-                        <div class="client-logo">🛡️</div>
-                        <div class="client-name" data-i18n="industry_insurance">التأمين</div>
-                    </div>
-                    <div class="client-card">
-                        <div class="client-logo">⚕️</div>
-                        <div class="client-name" data-i18n="industry_healthcare">الرعاية الصحية</div>
-                    </div>
-                    <div class="client-card">
-                        <div class="client-logo">🎓</div>
-                        <div class="client-name" data-i18n="industry_education">التعليم</div>
-                    </div>
-                    <div class="client-card">
-                        <div class="client-logo">🏛️</div>
-                        <div class="client-name" data-i18n="industry_government">الحكومة</div>
-                    </div>
+            <div class="usb-grid">
+                <div class="usb-feature">
+                    <div class="usb-feature-icon"><i class="fas fa-microchip"></i></div>
+                    <h3 data-i18n="usb_feature_1_title">فلاش USB 128GB</h3>
+                    <p data-i18n="usb_feature_1_desc">سعة كبيرة للتطبيق والنماذج</p>
+                </div>
+                <div class="usb-feature">
+                    <div class="usb-feature-icon"><i class="fas fa-desktop"></i></div>
+                    <h3 data-i18n="usb_feature_2_title">التطبيق الكامل</h3>
+                    <p data-i18n="usb_feature_2_desc">جاهز للتثبيت على Windows/Linux</p>
+                </div>
+                <div class="usb-feature">
+                    <div class="usb-feature-icon"><i class="fas fa-brain"></i></div>
+                    <h3 data-i18n="usb_feature_3_title">نماذج الذكاء الاصطناعي</h3>
+                    <p data-i18n="usb_feature_3_desc">مخصصة للمغرب تدعم العربية</p>
+                </div>
+                <div class="usb-feature">
+                    <div class="usb-feature-icon"><i class="fas fa-book"></i></div>
+                    <h3 data-i18n="usb_feature_4_title">وثائق ودعم</h3>
+                    <p data-i18n="usb_feature_4_desc">دليل المستخدم + دعم فني</p>
                 </div>
             </div>
-            <div class="client-content" id="featured">
-                <div class="client-grid">
-                    <div class="client-card">
-                        <div class="client-logo">AB</div>
-                        <div class="client-name">Attijariwafa Bank</div>
-                        <div class="client-industry" data-i18n="industry_banking">المصارف والمالية</div>
-                    </div>
-                    <div class="client-card">
-                        <div class="client-logo">MT</div>
-                        <div class="client-name">Maroc Telecom</div>
-                        <div class="client-industry" data-i18n="industry_telecom">الاتصالات</div>
-                    </div>
-                    <div class="client-card">
-                        <div class="client-logo">ONCF</div>
-                        <div class="client-name">ONCF</div>
-                        <div class="client-industry" data-i18n="industry_transport">النقل</div>
-                    </div>
-                    <div class="client-card">
-                        <div class="client-logo">OCP</div>
-                        <div class="client-name">OCP Group</div>
-                        <div class="client-industry" data-i18n="industry_agriculture">الزراعة</div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="testimonials_tag">آراء العملاء</span>
+                <h2 class="section-title" data-i18n="testimonials_title">ما يقوله عملاؤنا</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text" data-i18n="testimonial_1">"LocalMind غير طريقة عملنا تماماً. الآن يمكننا معالجة الفواتير في ثوانٍ."</p>
+                    <div class="testimonial-author">
+                        <strong data-i18n="testimonial_author_1">أحمد بن علي</strong>
+                        <span data-i18n="testimonial_title_1">, مكتب محاسبي</span>
                     </div>
                 </div>
-            </div>
-            <div class="client-content" id="roles">
-                <div class="client-grid">
-                    <div class="client-card">
-                        <div class="client-logo">👔</div>
-                        <div class="client-name" data-i18n="role_cto">مدير تكنولوجيا المعلومات</div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text" data-i18n="testimonial_2">"الحل المثالي للمكاتب الطبية. بيئة آمنة بدون تسريب البيانات."</p>
+                    <div class="testimonial-author">
+                        <strong data-i18n="testimonial_author_2">فاطمة الزهراء</strong>
+                        <span data-i18n="testimonial_title_2">, عيادة طبية</span>
                     </div>
-                    <div class="client-card">
-                        <div class="client-logo">💼</div>
-                        <div class="client-name" data-i18n="role_it_director">مدير قسم تكنولوجيا المعلومات</div>
-                    </div>
-                    <div class="client-card">
-                        <div class="client-logo">⚙️</div>
-                        <div class="client-name" data-i18n="role_system_admin">مسؤول النظام</div>
-                    </div>
-                    <div class="client-card">
-                        <div class="client-logo">🔐</div>
-                        <div class="client-name" data-i18n="role_ciso">ضابط الأمن السيبراني</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text" data-i18n="testimonial_3">"استخدام LocalMind جعلنا أكثر كفاءة."</p>
+                    <div class="testimonial-author">
+                        <strong data-i18n="testimonial_author_3">محمد اليازيدي</strong>
+                        <span data-i18n="testimonial_title_3">, مكتب قانوني</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta">
+    <!-- CTA -->
+    <section id="order" class="cta">
         <div class="container">
             <div class="cta-content">
-                <h2 class="cta-title" data-i18n="cta_title">جاهز لبدء رحلة إدارة التراخيص؟</h2>
+                <h2 class="cta-title" data-i18n="cta_title">جاهز لتجربة الذكاء الاصطناعي المحلي؟</h2>
                 <p class="cta-subtitle" data-i18n="cta_subtitle">
-                    انضم إلى أكثر من 500 شركة مغربية تثق بنا لإدارة تراخيصها
+                    انضم إلى أكثر من 500 مكتب في المغرب
                 </p>
                 <div class="cta-buttons">
                     <a href="#contact" class="btn btn-primary btn-large">
-                        <i class="fas fa-rocket"></i>
-                        <span data-i18n="cta_get_started">ابدأ الآن</span>
+                        <i class="fas fa-shopping-cart"></i> <span data-i18n="cta_order_now">اطلب الآن</span>
                     </a>
-                    <a href="#demo" class="btn btn-secondary btn-large">
-                        <i class="fas fa-play-circle"></i>
-                        <span data-i18n="cta_watch_demo">شاهد العرض التوضيحي</span>
+                    <a href="#" class="btn btn-secondary btn-large">
+                        <i class="fas fa-calendar"></i> <span data-i18n="cta_book_demo">حجز عرض توضيحي</span>
                     </a>
                 </div>
+                <p class="cta-guarantee" data-i18n="cta_guarantee">✅ ضمان 30 يوم | ✅ دعم فني | ✅ تسليم 48 ساعة</p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="contact-info">
                 <h2 data-i18n="contact_title">اتصل بنا</h2>
-                <p data-i18n="contact_subtitle">
-                    نحن هنا لمساعدتك في أي استفسارات أو احتياجات لديك. لا تتردد في الاتصال بنا.
-                </p>
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span data-i18n="contact_address">الرباط، المغرب</span>
+                <p class="contact-subtitle" data-i18n="contact_subtitle">نحن هنا لمساعدتك</p>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="method-icon"><i class="fas fa-phone"></i></div>
+                        <div class="method-details">
+                            <span class="method-label" data-i18n="contact_phone">الهاتف</span>
+                            <span class="method-value">+212 5 37 77 00 00</span>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span data-i18n="contact_phone">+212 5 37 77 00 00</span>
+                    <div class="contact-method">
+                        <div class="method-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="method-details">
+                            <span class="method-label" data-i18n="contact_email">البريد الإلكتروني</span>
+                            <span class="method-value">sales@localmind.ma</span>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span data-i18n="contact_email">contact@maynd.ma</span>
+                    <div class="contact-method">
+                        <div class="method-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="method-details">
+                            <span class="method-label" data-i18n="contact_address">العنوان</span>
+                            <span class="method-value" data-i18n="contact_address_value">الرباط، المغرب</span>
+                        </div>
                     </div>
-                </div>
-                <div class="contact-social">
-                    <a href="#" class="social-link" aria-label="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="social-link" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" class="social-link" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="social-link" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
                 </div>
             </div>
             <form class="contact-form">
-                <h3 data-i18n="contact_form_title">أرسل لنا رسالة</h3>
-                <div class="form-group">
-                    <label for="name" data-i18n="contact_name">الاسم الكامل</label>
-                    <input type="text" id="name" name="name" required dir="auto">
+                <h3 data-i18n="contact_form_title">اطلب استشارة مجانية</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name" data-i18n="contact_name">الاسم الكامل</label>
+                        <input type="text" id="name" name="name" required dir="auto">
+                    </div>
+                    <div class="form-group">
+                        <label for="company" data-i18n="contact_company">اسم الشركة</label>
+                        <input type="text" id="company" name="company" required dir="auto">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email" data-i18n="contact_email_label">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email" required dir="auto">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" data-i18n="contact_phone_label">رقم الهاتف</label>
+                        <input type="tel" id="phone" name="phone" required dir="auto">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="email" data-i18n="contact_email_label">البريد الإلكتروني</label>
-                    <input type="email" id="email" name="email" required dir="auto">
+                    <label for="sector" data-i18n="contact_sector">القطاع</label>
+                    <select id="sector" name="sector" required>
+                        <option value="" disabled selected data-i18n="contact_select_sector">اختر القطاع</option>
+                        <option value="accounting" data-i18n="sector_accounting">المكاتب المحاسبية</option>
+                        <option value="medical" data-i18n="sector_medical">العيادات الطبية</option>
+                        <option value="legal" data-i18n="sector_legal">المكاتب القانونية</option>
+                        <option value="other" data-i18n="sector_other">آخر</option>
+                    </select>
                 </div>
                 <div class="form-group">
-                    <label for="phone" data-i18n="contact_phone_label">رقم الهاتف</label>
-                    <input type="tel" id="phone" name="phone" dir="auto">
-                </div>
-                <div class="form-group">
-                    <label for="company" data-i18n="contact_company">الشركة</label>
-                    <input type="text" id="company" name="company" dir="auto">
+                    <label for="package" data-i18n="contact_package">الحزمة</label>
+                    <select id="package" name="package" required>
+                        <option value="" disabled selected data-i18n="contact_select_package">اختر الحزمة</option>
+                        <option value="pro" data-i18n="package_professional">المحترف (8,900 MAD)</option>
+                        <option value="business" data-i18n="package_business">الأعمال (19,900 MAD)</option>
+                        <option value="enterprise" data-i18n="package_enterprise">المؤسسي (39,900 MAD)</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="message" data-i18n="contact_message">الرسالة</label>
-                    <textarea id="message" name="message" required dir="auto"></textarea>
+                    <textarea id="message" name="message" rows="4" dir="auto"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary form-submit">
-                    <i class="fas fa-paper-plane"></i>
-                    <span data-i18n="contact_send">إرسال الرسالة</span>
+                    <i class="fas fa-paper-plane"></i> <span data-i18n="contact_send">إرسال الطلب</span>
                 </button>
-                <div class="success-message" data-i18n="contact_success">شكراً لك! تم إرسال رسالتك بنجاح.</div>
-                <div class="error-message" data-i18n="contact_error">حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى.</div>
+                <div class="success-message" data-i18n="contact_success">شكراً لك! تم استلام طلبك.</div>
+                <div class="error-message" data-i18n="contact_error">حدث خطأ. يرجى المحاولة مرة أخرى.</div>
             </form>
         </div>
     </section>
@@ -427,41 +481,51 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-brand">
-                <a href="#" class="logo">
-                    <span class="logo-icon">&#9679;</span>
-                    <span class="logo-text">maynd.<span class="highlight">ma</span></span>
-                </a>
-                <p data-i18n="footer_description">الحل الرائد لإدارة التراخيص في المغرب، مصمم خصيصاً لاحتياجات الشركات المغربية.</p>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🧠</span>
+                        <span class="logo-text">localmind.<span class="highlight">ma</span></span>
+                    </a>
+                    <p data-i18n="footer_description">الحل الرائد للذكاء الاصطناعي المحلي في المغرب</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 data-i18n="footer_products">منتجاتنا</h4>
+                        <ul>
+                            <li><a href="#pricing" data-i18n="package_professional">المحترف</a></li>
+                            <li><a href="#pricing" data-i18n="package_business">الأعمال</a></li>
+                            <li><a href="#pricing" data-i18n="package_enterprise">المؤسسي</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 data-i18n="footer_solutions">الحلول</h4>
+                        <ul>
+                            <li><a href="#solutions" data-i18n="solution_fiduciaires">المكاتب المحاسبية</a></li>
+                            <li><a href="#solutions" data-i18n="solution_medical">العيادات الطبية</a></li>
+                            <li><a href="#solutions" data-i18n="solution_legal">المكاتب القانونية</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 data-i18n="footer_support">الدعم</h4>
+                        <ul>
+                            <li><a href="#contact" data-i18n="footer_contact_us">اتصل بنا</a></li>
+                            <li><a href="#" data-i18n="footer_faq">الأسئلة الشائعة</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 data-i18n="footer_legal">قانوني</h4>
+                        <ul>
+                            <li><a href="#" data-i18n="footer_privacy">سياسة الخصوصية</a></li>
+                            <li><a href="#" data-i18n="footer_terms">شروط الاستخدام</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="footer-links">
-                <h4 data-i18n="footer_links">روابط سريعة</h4>
-                <ul>
-                    <li><a href="#features" data-i18n="footer_features">المميزات</a></li>
-                    <li><a href="#pricing" data-i18n="footer_pricing">الأسعار</a></li>
-                    <li><a href="#clients" data-i18n="footer_clients">العملاء</a></li>
-                    <li><a href="#contact" data-i18n="footer_contact">اتصل بنا</a></li>
-                </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LocalMind.ma. <span data-i18n="footer_rights">جميع الحقوق محفوظة.</span></p>
+                <p data-i18n="footer_made_in_morocco">🇲🇦 مصنوع في المغرب</p>
             </div>
-            <div class="footer-links">
-                <h4 data-i18n="footer_legal">قانوني</h4>
-                <ul>
-                    <li><a href="#" data-i18n="footer_privacy">سياسة الخصوصية</a></li>
-                    <li><a href="#" data-i18n="footer_terms">شروط الاستخدام</a></li>
-                    <li><a href="#" data-i18n="footer_cookies">سياسة الكوكيز</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4 data-i18n="footer_support">الدعم</h4>
-                <ul>
-                    <li><a href="#" data-i18n="footer_help">مركز المساعدة</a></li>
-                    <li><a href="#" data-i18n="footer_docs">التوثيق</a></li>
-                    <li><a href="#" data-i18n="footer_community">المجتمع</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Maynd.ma. <span data-i18n="footer_rights">جميع الحقوق محفوظة.</span></p>
         </div>
     </footer>
 
